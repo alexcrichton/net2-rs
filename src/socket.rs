@@ -125,6 +125,7 @@ fn addr2raw_v4(addr: &SocketAddrV4) -> (SocketAddrCRepr, c::socklen_t) {
             #[cfg(any(
                 target_os = "dragonfly",
                 target_os = "freebsd",
+                target_os = "hurd",
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "netbsd",
@@ -175,6 +176,7 @@ fn addr2raw_v6(addr: &SocketAddrV6) -> (SocketAddrCRepr, c::socklen_t) {
             #[cfg(any(
                 target_os = "dragonfly",
                 target_os = "freebsd",
+                target_os = "hurd",
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "netbsd",
